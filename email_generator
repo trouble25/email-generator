@@ -1,0 +1,18 @@
+import random
+import string
+
+def generaterandom_string(length=10):
+    characters = string.ascii_letters + string.digits
+    return ''.join(random.choice(characters) for  in range(length))
+
+def generaterandomemail():
+    domains = ["gmail.com", "yahoo.com", "outlook.com", "example.com"]
+    localpart = generaterandomstring(10)
+    domain = random.choice(domains)
+    email = f"{local_part}@{domain}"
+    return email
+
+if __name == "__main":
+    number_of_emails = int(input("Enter the number of random emails to generate: "))
+    for  in range(number_of_emails):
+        print(generate_random_email())
